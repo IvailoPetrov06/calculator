@@ -6,7 +6,7 @@ export default function App() {
   const [darkMode, setDarkMode] = useState(false);
   const [currentNumber, setCurrentNumber] = useState('');
   const [lastNumber, setLastNumber] = useState('');
-  const buttons = ['C', 'del','/', 7, 8, 9, '*', 4, 5, 6, '-', 1, 2, 3, '+', 0, '.', '='];
+  const buttons = ['C', 'del','/', 7, 8, 9, '*', 4, 5, 6, '-', 1, 2, 3, '+', 0, '.','='];
 
   const styles = StyleSheet.create({
     results: {
