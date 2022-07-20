@@ -6,18 +6,18 @@ export default function App() {
   const [darkMode, setDarkMode] = useState(false);
   const [currentNumber, setCurrentNumber] = useState('');
   const [lastNumber, setLastNumber] = useState('');
-  const buttons = ['C', 'del','/', 7, 8, 9, '*', 4, 5, 6, '-', 1, 2, 3, '+', 0, '.','='];
+  const buttons = ['C', 'del','/', 7, 8, 9, '*', 4, 5, 6, '-', 1, 2, 3, '+', 0, '.', '='];
 
   const styles = StyleSheet.create({
     results: {
       backgroundColor: darkMode ? '#282f3b' : '#f5f5f5',
       maxWidth: '100%',
-      minHeight: '35%',
+      minHeight: '20%',
       alignItems: 'flex-end',
       justifyContent: 'flex-end',
     },
     resultText: {
-      maxHeight: 45,
+      maxHeight: 40,
       color: '#FF6666',
       margin: 15,
       fontSize: 35,
@@ -41,7 +41,7 @@ export default function App() {
     },
     buttons: {
       width: '100%',
-      height: '50%',
+      height: '33%',
       flexDirection: 'row',
       flexWrap: 'wrap',
     },
@@ -50,7 +50,7 @@ export default function App() {
       alignItems: 'center',
       justifyContent: 'center',
       minWidth: '24%',
-      minHeight: '54%',
+      minHeight: '80%',
       flex: 2,
     },
     textButton: {
@@ -108,7 +108,7 @@ export default function App() {
       <View style={styles.buttons}>
         {buttons.map((btn) =>
           btn === '=' || btn === '/' || btn === '*' || btn === '-' || btn === '+' ?
-            <TouchableOpacity key={btn} style={[styles.button, { backgroundColor: '#f2ac07' }]} onPress={() => handleInput(btn)}>
+            <TouchableOpacity key={btn} style={[styles.button, { backgroundColor: '#ffa500' }]} onPress={() => handleInput(btn)}>
               <Text style={[styles.textButton, { color: 'white', fontSize: 28 }]}>{btn}</Text>
             </TouchableOpacity>
             : btn === 0 ?
