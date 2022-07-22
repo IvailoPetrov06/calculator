@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import {StyleSheet,View,Text,TouchableOpacity} from 'react-native';
 import Icon from 'react-native-vector-icons/Entypo'
+import {StyleSheet, View, Text, TouchableOpacity} from 'react-native';
 
 export default function App() {
   const [darkMode, setDarkMode] = useState(false);
